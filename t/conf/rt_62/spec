@@ -1,0 +1,2 @@
+schema=test	table=item	field=cart_id	cmd=RELATION	reltable=cart	relfield=cart_id	relname=cart	reverse_name=items	type=CHILDOF
+schema=test	table=item	field=shipment_id	cmd=RELATION	reltable=shipment	relfield=shipment_id	relname=shipment	reverse_name=items	type=CHILDOF

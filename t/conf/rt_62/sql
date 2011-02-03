@@ -1,0 +1,31 @@
+CREATE TABLE item (
+  item_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  cart_id INTEGER,
+  shipment_id INTEGER,
+  name VARCHAR(32) NOT NULL
+);
+
+CREATE TABLE cart (
+  cart_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  custname VARCHAR(23) NOT NULL
+);
+
+CREATE TABLE shipment (
+  shipment_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  package VARCHAR(32) NOT NULL
+);
+
+INSERT INTO cart VALUES (1,'joe');
+INSERT INTO cart VALUES (2,'frank');
+
+INSERT INTO shipment VALUES (100,'box');
+INSERT INTO shipment VALUES (200,'bag');
+INSERT INTO shipment VALUES (300,'tin');
+
+INSERT INTO item VALUES (10,1,200,'green');
+INSERT INTO item VALUES (11,1,100,'blue');
+INSERT INTO item VALUES (12,1,200,'red');
+
+INSERT INTO item VALUES (13,2,300,'pentagon');
+INSERT INTO item VALUES (14,2,300,'square');
+INSERT INTO item VALUES (15,2,300,'triangle');
